@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import Buttons from './Buttons';
 
 class Pokedex extends React.Component {
   constructor() {
@@ -52,21 +53,7 @@ class Pokedex extends React.Component {
           <Pokemon key={pokemons.id} pokemon={this.filterPokemonbyType()[this.state.pokemonAtual]} />
         </div>
         <div className="buttons">
-          <button className="Normal" onClick={this.selectType}>Normal</button>
-          <button className="Fire" onClick={this.selectType}>Fire</button>
-          <button className="Fighting" onClick={this.selectType}>Fighting</button>
-          <button className="Water" onClick={this.selectType}>Water</button>
-          <button className="Flying" onClick={this.selectType}>Flying</button>
-          <button className="Grass" onClick={this.selectType}>Grass</button>
-          <button className="Poison" onClick={this.selectType}>Poison</button>
-          <button className="Electric" onClick={this.selectType}>Electric</button>
-          <button className="Ground" onClick={this.selectType}>Ground</button>
-          <button className="Psychic" onClick={this.selectType}>Psychic</button>
-          <button className="Rock" onClick={this.selectType}>Rock</button>
-          <button className="Bug" onClick={this.selectType}>Bug</button>
-          <button className="Dragon" onClick={this.selectType}>Dragon</button>
-          <button className="Ghost" onClick={this.selectType}>Ghost</button>
-          <br />
+          <Buttons types={this.props.types} function={this.selectType} />
           <button className="all" onClick={this.selectType}>All</button>
           <button onClick={this.changePokemon}>➜</button>
         </div>
