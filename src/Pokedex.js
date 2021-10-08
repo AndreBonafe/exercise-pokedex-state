@@ -8,6 +8,7 @@ class Pokedex extends React.Component {
     this.state = {
         pokemonAtual: 0,
         selectedType: 'all',
+        buttonDisable: 0,
     }
   }
 
@@ -22,20 +23,6 @@ class Pokedex extends React.Component {
     })
   }
 
-  selectType = (event) => {
-    console.log(this.state.selectedType)
-    const type = event.target.className;
-    if (type !== this.state.selectedType) {
-      return this.setState( {
-        pokemonAtual: 0,
-        selectedType: type,
-      })
-    }
-    this.setState( {
-      selectedType: 'all',
-    })
-  }
-
   filterPokemonbyType = () => {
     const { pokemons } = this.props
     if (this.state.selectedType !== 'all') {
@@ -45,17 +32,37 @@ class Pokedex extends React.Component {
     }
   }
 
+  checkLength = () => {
+    if (this.filterPokemonbyType().length === 1) {
+      this.setState( {
+        buttonDisable: 1,
+      })
+    } else {
+      this.setState( {
+        buttonDisable: 0,
+      })
+    }
+  }
+
+  selectType = (event) => {
+    const type = event.target.className;
+    this.setState( {
+      pokemonAtual: 0,
+      selectedType: type,
+    })
+  }
+
   render() {
     const { pokemons } = this.props;
     return (
-      <div>
+      <div onLoad={this.checkLength}>
         <div className="pokedex">
           <Pokemon key={pokemons.id} pokemon={this.filterPokemonbyType()[this.state.pokemonAtual]} />
         </div>
-        <div className="buttons">
-          <Buttons types={this.props.types} function={this.selectType} />
+        <div key={pokemons.id} className="buttons">
+          <Buttons  types={this.props.types} function={this.selectType} />
           <button className="all" onClick={this.selectType}>All</button>
-          <button onClick={this.changePokemon}>➜</button>
+          <button onClick={this.changePokemon} disabled={this.state.buttonDisable}>➜</button>
         </div>
       </div>   
     );
