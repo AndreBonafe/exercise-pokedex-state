@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex: 1 1 auto;
+  flex: 1 1 content;
   min-width: 25%;
   margin: 10px 10px;
   border: 1px black solid;
@@ -22,4 +22,67 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 10px 10px;
+  justify-content: center;
+}
+
+button {
+  margin: 3px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.Fire {
+  background-color: #F08030;
+}
+
+.Electric {
+  background-color: #F8D030;
+}
+
+.Fighting {
+  background-color: #C03028;
+}
+
+.Flying {
+  background-color: #A890F0;
+}
+
+.Normal {
+  background-color: #A8A878;
+}
+
+.Poison {
+  background-color: #A040A0;
+}
+
+.Ground {
+  background-color: #EAC168;
+}
+
+.Rock {
+  background-color: #705898;
+}
+
+.Bug {
+  background-color: #A8B820;
+}
+
+.Ghost {
+  background-color: #705898;
+}
+
+.Grass {
+  background-color: #78C850;
+}
+
+.Psychic {
+  background-color: #F85888;
+}
+
+.Dragon {
+  background-color: #6C36EF;
+}
+
+.Water {
+  background-color: #6890F0;
 }
