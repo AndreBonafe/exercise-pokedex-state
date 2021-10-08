@@ -97,7 +97,51 @@ const pokemons = [
       },
       image: "https://cdn2.bulbagarden.net/upload/2/2c/Spr_5b_148.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
-  }
+  },
+  {
+    id: 196,
+    name: "Espeon",
+    type: 'Psychic',
+    averageWeight: {
+        value: "26.5",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/0/07/Spr_5b_196.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 106,
+    name: "Hitmonlee",
+    type: 'Fighting',
+    averageWeight: {
+        value: "49.8",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/9/99/Spr_5b_106.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 104,
+    name: "Cubone",
+    type: 'Ground',
+    averageWeight: {
+        value: "6.5",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/a/a0/Spr_5b_104.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 94,
+    name: "Gengar",
+    type: 'Ghost',
+    averageWeight: {
+        value: "40.5",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/2/21/Spr_5b_094.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
 ];
 
 export default pokemons;
