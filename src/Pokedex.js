@@ -53,14 +53,13 @@ class Pokedex extends React.Component {
   }
 
   render() {
-    const { pokemons } = this.props;
     return (
       <div onLoad={this.checkLength}>
         <div className="pokedex">
-          <Pokemon key={pokemons.id} pokemon={this.filterPokemonbyType()[this.state.pokemonAtual]} />
+          <Pokemon pokemon={this.filterPokemonbyType()[this.state.pokemonAtual]} />
         </div>
-        <div key={pokemons.id} className="buttons">
-          <Buttons  types={this.props.types} function={this.selectType} />
+        <div className="buttons">
+          <Buttons types={this.props.types} function={this.selectType} />
           <button className="all" onClick={this.selectType}>All</button>
           <button onClick={this.changePokemon} disabled={this.state.buttonDisable}>➜</button>
         </div>

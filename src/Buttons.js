@@ -5,7 +5,7 @@ class Buttons extends React.Component {
     const { types } = this.props
     return (
       <div className="classbuttons">
-        {types.map(type => <button className={type} onClick={this.props.function} >{type}</button>)}
+        {types.map(type => <button key={type} className={type} onClick={this.props.function} >{type}</button>)}
       </div>
     );
   }
