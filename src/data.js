@@ -142,6 +142,50 @@ const pokemons = [
     image: "https://cdn2.bulbagarden.net/upload/2/21/Spr_5b_094.png",
     moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
   },
+  {
+    id: 1,
+    name: "Bulbasaur",
+    type: 'Grass',
+    averageWeight: {
+        value: "6.9",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/7/76/Spr_5b_001.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 9,
+    name: "Blastoise",
+    type: 'Water',
+    averageWeight: {
+        value: "101.1",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/3/3d/Spr_5b_009.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 18,
+    name: "Pidgeot",
+    type: 'Flying',
+    averageWeight: {
+        value: "39.5",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/8/8a/Spr_5b_018.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+    id: 76,
+    name: "Golem",
+    type: 'Rock',
+    averageWeight: {
+        value: "300",
+        measurementUnit: "kg"
+    },
+    image: "https://cdn2.bulbagarden.net/upload/3/31/Spr_5b_076.png",
+    moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
 ];
 
 export default pokemons;

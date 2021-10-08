@@ -66,7 +66,6 @@ class Pokedex extends React.Component {
           <button className="Grass" onClick={this.selectType}>Grass</button>
           <button className="Psychic" onClick={this.selectType}>Psychic</button>
           <button className="Dragon" onClick={this.selectType}>Dragon</button>
-          <button className="Dark" onClick={this.selectType}>Dark</button>
           <br />
           <button className="all" onClick={this.selectType}>All</button>
           <button onClick={this.changePokemon}>➜</button>
