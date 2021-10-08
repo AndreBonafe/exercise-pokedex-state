@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.pkm-id {
+  font-size: 15px;
+  margin-left: 2px;
+  float: left;
+}
+
 .pokemon {
   display: flex;
   align-items: center;
