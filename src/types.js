@@ -1,6 +1,6 @@
-const types = ['Fire', 'Electric', 'Normal', 
-'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 
-'Bug', 'Ghost', 'Water', 'Grass', 'Psychic', 
-'Dragon'];
+const types = ['Normal', 'Fire', 'Fighting', 
+'Water', 'Flying', 'Grass', 'Poison', 'Electric', 
+'Ground', 'Psychic', 'Rock', 'Bug', 'Dragon', 
+'Ghost'];
 
 export default types;
