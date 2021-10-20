@@ -1,0 +1,36 @@
+.infos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.infos img {
+    width: 150px;
+    align-self: center;
+}
+
+.about-type {
+    display: flex;
+    justify-content: center;
+}
+
+.Type-pkm {
+    margin: 10px;
+}
+
+.Weight-pkm {
+    margin: 10px;
+}
+
+.About-pkm {
+    max-width: 750px;
+    text-align: center;
+    align-self: center;
+    margin: 0 15px;
+}
+
+.About-pkm p {
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 8px;
+}

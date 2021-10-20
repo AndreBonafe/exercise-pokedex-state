@@ -3,8 +3,8 @@ import Pokemon from './Pokemon';
 import Buttons from './Buttons';
 
 class Pokedex extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
         pokemonAtual: 0,
         selectedType: 'all',

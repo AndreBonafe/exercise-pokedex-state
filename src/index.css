@@ -7,10 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pkm-id {
-  font-size: 15px;
-  margin-left: 2px;
-  float: left;
+.App img {
+  text-align: center;
+  margin: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  background-color: lightgray;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
 }
 
 .pokemon {
@@ -22,6 +34,8 @@ body {
   margin: 10px 10px;
   border: 1px black solid;
   border-radius: 10px;
+  padding: 5px 15px;
+  flex-wrap: wrap;
 }
 
 .pokedex {
@@ -66,7 +80,7 @@ button {
 }
 
 .Rock {
-  background-color: #705898;
+  background-color: rgb(184,160,56);
 }
 
 .Bug {
@@ -91,4 +105,14 @@ button {
 
 .Water {
   background-color: #6890F0;
+}
+
+.voltar, .more {
+  font-size: 15px;
+}
+
+.favorite-icon {
+  max-width: 15px;
+  margin: 0;
+  padding: 0;
 }
